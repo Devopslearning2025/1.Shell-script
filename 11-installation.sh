@@ -1,3 +1,3 @@
 #!/bin/bash
 
-dbf install nginx -y
+dnf install nginx -y
