@@ -14,4 +14,5 @@ fi
  if [ $? -ne 0 ]
  then
     echo "the nginstallation failure"
+    exit 1
 fi
