@@ -16,3 +16,5 @@ fi
     echo "the nginstallation failure"
     exit 1
 fi
+
+dnf install mysql -y
