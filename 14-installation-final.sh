@@ -10,4 +10,13 @@ else
     echo "you are with root user"
 fi
 
-dnf install git -y
+dnf install gitt -y
+
+if [ $? -ne 0]
+then
+    echo "the git install is failure...."
+    exit 1
+else
+    echo "the git instllation success"    
+fi    
+
