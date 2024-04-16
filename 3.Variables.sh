@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Name1=Ramesh
+Name1=Ramesh #no spaces between = and value
 Name2=Suresh
 
 echo "Name1: Hello Name2 , How are you? "
