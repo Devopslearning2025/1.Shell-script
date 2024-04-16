@@ -14,6 +14,4 @@ fi
  if [ $? -ne 0 ]
  then
     echo "the nginstallation failure"
-fi    
-
- echo "script is proceeding"
+fi
