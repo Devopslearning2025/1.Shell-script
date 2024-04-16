@@ -2,7 +2,7 @@
 
 userid=$(id -u)
 
-if [ $userid -ne o ] 
+if [ $userid -ne 0 ] 
 then
     echo "Please run the script is with root user"
     exit 1 #manually exit the script if user is not root
