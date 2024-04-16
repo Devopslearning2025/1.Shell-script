@@ -12,7 +12,7 @@ fi
 
 dnf install gitt -y
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
     echo "the git install is failure...."
     exit 1
