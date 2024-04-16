@@ -11,7 +11,7 @@ else
 fi
  dnf install nginxx -y
 
- if [$? -ne 0]
+ if [ $? -ne 0 ]
  then
     echo "the nginstallation failure"
 fi    
