@@ -23,8 +23,8 @@ else
     echo "you are with root user"    
 fi
 
-dnf install nginxx -y
+dnf install nginxx -y &>>$log
 VALIDATE $? "Installing nginx"
 
-dnf install gcc -y
+dnf install gcc -y &>>$log
 VALIDATE $? "Installing gcc"
