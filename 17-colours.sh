@@ -14,10 +14,10 @@ echo "script started at $date"
 VALIDATE (){
     if [ $1 -ne 0 ]
     then
-        echo -e "$2 ... $R failure $N ]"
+        echo -e "$2 ... $R failure $N"
         exit 1
     else
-        echo -e "$2 is $G success $N ]"
+        echo -e "$2 is $G success $N"
     fi
 }
 
@@ -29,8 +29,8 @@ else
     echo "you are with root user"    
 fi
 
-dnf install nginxx -y &>>$log
+dnf install nginx -y &>>$log
 VALIDATE $? "Installing nginx"
 
-dnf install gcc -y &>>$log
+dnf install gccc -y &>>$log
 VALIDATE $? "Installing gcc"
