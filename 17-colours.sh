@@ -30,7 +30,7 @@ else
     echo "you are with root user"    
 fi
 
-dnf install nginx -y &>>$log
+dnf install nginxx -y &>>$log
 VALIDATE $? "Installing nginx"
 
 dnf install gcc -y &>>$log
