@@ -3,10 +3,14 @@
 userid=$(id -u)
 
 VALIDATE (){
-    echo "exit status: $1"
-    echo "what you are doing: $2"
+    if [ $1 -ne 0 ]
+    then
+        echo "$2 ... failure"
+        exigt 1
+    else
+        echo "$2 is success"
+    fi
 }
-
 
 if [ $userid -ne 0 ]
 then
@@ -17,5 +21,7 @@ else
 fi
 
 dnf install nginx -y
-
 VALIDATE $? "Installing nginx"
+
+dnf install gcc -y
+VALIDATE $? "Installing gcc"
