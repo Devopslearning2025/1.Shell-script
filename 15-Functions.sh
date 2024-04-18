@@ -18,4 +18,4 @@ fi
 
 dnf install nginx -y
 
-VALIDATE $1 "Installing nginx"
+VALIDATE $? "Installing nginx"
