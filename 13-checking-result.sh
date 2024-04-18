@@ -9,7 +9,7 @@ then
 else
     echo "you are super suer"
 fi
- dnf install git -y
+ dnf install nginx -y
 
  if [ $? -ne 0 ]
  then
