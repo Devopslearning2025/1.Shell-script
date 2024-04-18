@@ -4,10 +4,9 @@ userid=$(id -u)
 script_name=$(echo $0|cut -d "." -f1)
 date=$(date +%F-%H-%M-%S)
 log=/tmp/$script_name-$date.log
-R=$(\e[31m)
-G=$(\e[32m)
-N=%(\e[0m)
-)
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 echo "script started at $date"
 
