@@ -11,6 +11,7 @@ VALIDATE (){
 if [ $userid -ne 0 ]
 then
     echo " Please run with root user"
+    exit 1
 else
     echo "you are with root user"    
 fi
