@@ -29,7 +29,8 @@ else
     echo "you are with root user"    
 fi
 
-for i in $@
+for i in $@ 
+do
     dnf install $i -y &>>$log
     VALIDATE $? "Installing nginxx"
-fi
+done
