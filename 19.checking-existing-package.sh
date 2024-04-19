@@ -33,12 +33,8 @@ fi
 for i in $@ 
 do
     dnf list installed $i -y &>>$log
-    if [ $? -ne 0 ]
+    if [ $? -eq 0 ]
     then
-        echo -e "$i is not installed ....\e[33m hence installing $i $N"
-        dn install $i  -y &>>$log
-        VALIDATE $? "Installing $i"
-    else     
-        echo -e "$i is $G insttalled $N"
+        echo -e "$i is  installed ....\e[33m skipping $i $N"
     fi
 done
