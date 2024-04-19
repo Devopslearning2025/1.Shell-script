@@ -11,17 +11,6 @@ N="\e[0m"
 
 echo "script started at $date"
 
-
-VALIDATE (){
-    if [ $1 -ne 0 ]
-    then
-        echo -e "$2 ... $R failure $N"
-        exit 1
-    else
-        echo -e "$2 is $G success $N"
-    fi
-}
-
 if [ $userid -ne 0 ]
 then
     echo " Please run with root user"
@@ -32,9 +21,10 @@ fi
 
 for i in $@ 
 do
+    echo "package to install: $i"
     dnf list installed $i -y &>>$log
     if [ $? -eq 0 ]
     then
-        echo -e "$i is  installed ....\e[33m skipping $i $N"
+        echo "$i is  installed .... skipping $i"
     fi
 done
