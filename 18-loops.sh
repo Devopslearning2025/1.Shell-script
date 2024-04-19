@@ -32,5 +32,5 @@ fi
 for i in $@ 
 do
     dnf install $i -y &>>$log
-    VALIDATE $? "Installing nginxx"
+    VALIDATE $? "Installing $i"
 done
