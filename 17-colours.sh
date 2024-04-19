@@ -30,7 +30,7 @@ else
 fi
 
 dnf install nginx -y &>>$log
-VALIDATE $? "Installing nginx"
+VALIDATE $? "Installing nginxx"
 
-dnf install gccc -y &>>$log
+dnf install gcc -y &>>$log
 VALIDATE $? "Installing gcc"
