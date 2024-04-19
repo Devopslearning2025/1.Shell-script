@@ -30,6 +30,6 @@ else
 fi
 
 for i in $@
-    dnf install i -y &>>$log
+    dnf install $i -y &>>$log
     VALIDATE $? "Installing nginxx"
 fi
