@@ -9,6 +9,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 echo "script started at $date"
+
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
