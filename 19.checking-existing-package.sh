@@ -26,5 +26,7 @@ do
     if [ $? -eq 0 ]
     then
         echo "$i is  installed .... skipping $i"
+    else
+        echo "$i is not installed .. need to install $i"
     fi
 done
