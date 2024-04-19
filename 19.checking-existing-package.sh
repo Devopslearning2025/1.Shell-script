@@ -8,9 +8,14 @@ R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
-
 echo "script started at $date"
-
+VALIDATE(){
+    if [ $1 -ne 0 ]
+    then
+        echo -e "$2 is $R Failure $N"
+    else
+        echo -e "$2 is $G Installed $N"
+}
 if [ $userid -ne 0 ]
 then
     echo " Please run with root user"
@@ -27,6 +32,8 @@ do
     then
         echo -e "$i is  $G installed .... $Y skipping $i $N"
     else
-        echo -e "$i is not installed .. $R need to install $i $N"
+       # echo -e "$i is not installed .. $R need to install $i $N"
+       dnf install $i -y &>>$log
+       VALIDATE $? "Installing $i "
     fi
 done
