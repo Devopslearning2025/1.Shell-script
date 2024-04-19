@@ -25,8 +25,8 @@ do
     dnf list installed $i -y &>>$log
     if [ $? -eq 0 ]
     then
-        echo "$i is  installed .... skipping $i"
+        echo -e "$i is  $G installed .... $y skipping $i $N"
     else
-        echo "$i is not installed .. need to install $i"
+        echo -e "$i is not installed .. $R need to install $i $N"
     fi
 done
