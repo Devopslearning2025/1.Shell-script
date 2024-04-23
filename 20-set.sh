@@ -11,4 +11,5 @@ else
 fi
 
 dnf install gcc -y
+dnf install gzip -y
 dnf install gziip -y
