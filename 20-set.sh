@@ -12,6 +12,6 @@ fi
 
 dnf install gcc -y
 dnf install gzip -y
-dnf install gziip -y
+dnf install tar -y
 
 echo "completed the above all installation"
