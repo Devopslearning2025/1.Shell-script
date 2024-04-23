@@ -10,5 +10,5 @@ else
     echo "you are with root user"
 fi
 
-dnf install gccc -y
-dnf install gzip -y
+dnf install gcc -y
+dnf install gziip -y
