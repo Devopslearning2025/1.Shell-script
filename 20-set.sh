@@ -4,10 +4,10 @@ userid=$(id -u)
 set -e
 
 failure(){
-    echo "falire at $1:$2"
+    echo "failed at $1:$2"
 }
 
-trap 'FAILURE{LINENO} "{BASH_COMMAND}"' ERR
+trap 'failure ${LINENO} "${BASH_COMMAND}"' ERR
 
 if [ $userid -ne 0 ] 
 then
