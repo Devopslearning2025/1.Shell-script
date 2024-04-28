@@ -1,15 +1,12 @@
 #!/bin/bash
 
-#echo "Enter 1st person name"
-#read Name1 #its shows the name which you entered 
-#read -s Name1 #it doesn't show the name
-#echo "Enter 2nd persona name"
-#read Name2  #its shows the name which you entered
-#read -s Name2 #it doesn't show the name
-read -p "Enter 1st person name:" Name1 # which echo comannd
-read -p "Enter 2nd person name:" Name2
+#echo "Enter your name"
+#read USERNAME #its shows the name which you entered 
+#read -s USERNAME #it doesn't show the name
+#echo "Enter your password"
+#read PASSWORD  #its shows the password which you entered
+#read -s PASSWORD #it doesn't show the password
+read -p "Enter your name:" USERNAME # here echo comannd is not require
+read -p "Enter your password:" PASSWORD
 
-echo "$Name1 : How are you $Name2 ?"
-echo "$Name2 : I am doing good $Name1. how about you ?"
-echo "$Name1 : I am doing dood. how is you job $Name2 ?"
-echo "$Name2 : not well, thisnking to Learn DevOps"
+echo " your name $USERNAME and password is $PASSWORD"
