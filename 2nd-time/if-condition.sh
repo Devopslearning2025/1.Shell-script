@@ -1,8 +1,8 @@
 #!/bin/bash
 
-today = monday
+today=monday
 
-if [ $today == sunday ]
+if [ $today -eq sunday ]
 then
     echo "Enjoy the holiday"
 else
