@@ -2,7 +2,7 @@
 
 today="monday"
 
-if [ $today -eq "sunday" ]
+if [ $today == "sunday" ]
 then
     echo "Enjoy the holiday"
 else
