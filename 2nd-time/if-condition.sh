@@ -1,6 +1,7 @@
 #!/bin/bash
 
-today="monday"
+#today="monday"
+today=$1
 
 if [ $today == "sunday" ]
 then
