@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Declaring variables as Arguments
+
 Name1=$1
 Name2=$2
 

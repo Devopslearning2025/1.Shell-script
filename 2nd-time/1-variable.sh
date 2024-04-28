@@ -1,4 +1,5 @@
 #!/bin/bash
+#Declaring variables
 
 Name1=Rakesh
 Name2=Suresh

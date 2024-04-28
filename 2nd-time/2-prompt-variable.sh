@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Declaring variables as prompt 
+
 #echo "Enter your name"
 #read USERNAME #its shows the name which you entered 
 #read -s USERNAME #it doesn't show the name
