@@ -1,7 +1,9 @@
 #!/bin/bash
 
-Name1=$1
-Name2=$2
+echo "Enter 1st person name"
+read Name1
+echo "Enter 2nd persona name"
+read Name2
 
 echo "$Name1: How are you $Name2"
 echo "$Name2: I am doing good $Name1"
