@@ -9,4 +9,4 @@
 read -p "Enter your name:" USERNAME # here echo comannd is not require
 read -p "Enter your password:" PASSWORD
 
-echo " your name $USERNAME and password is $PASSWORD"
+echo "Your Name is $USERNAME and PassWord is $PASSWORD"
