@@ -12,9 +12,9 @@
 #echo "The 2nd movie from list is: ${Movies[1]} "
 #echo "The movies are from the list is: ${Movies[@]}"
 
-for i in (( DJ; Athadu; RR ))
+for i in (( DJ Athadu RR ))
 do
-#echo $i; 
+    echo $i
  #   ((i++))
- print ( i = 0; i <= 3; i++ )
+ #print ( i = 0; i <= 3; i++ )
 done
