@@ -32,9 +32,8 @@ for i in ${Movies[@]}
 do
     if [ -d $i ]
     then
-        echo "Directory $i is there, so creating backup"
-        mv $i $i-$(date +%F)
-        ls  $i*
+        echo "Directory $i is there"
+        ls  $i
     else
         echo "$1 directory is not present, creating it"
         mkdir -p $i; ls $i
