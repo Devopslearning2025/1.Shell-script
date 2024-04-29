@@ -8,6 +8,11 @@
 
 Movies=( "DJ" "Athadu" "RRR" )
 
-echo "The 1st movie from list is: ${Movies[0]}"
-echo "The 2nd movie from list is: ${Movies[1]} "
-echo "The movies are from the list is: ${Movies[@]}"
+#echo "The 1st movie from list is: ${Movies[0]}"
+#echo "The 2nd movie from list is: ${Movies[1]} "
+#echo "The movies are from the list is: ${Movies[@]}"
+
+for i in $Movies
+do
+    echo $i
+done
