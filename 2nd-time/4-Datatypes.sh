@@ -14,6 +14,7 @@ Movies=( "DJ" "Athadu" "RRR" )
 
 for i in $Movies
 do
-    echo $i; 
-    ((i++))
+#echo $i; 
+ #   ((i++))
+ print (i=0; i<=3; i++)
 done
