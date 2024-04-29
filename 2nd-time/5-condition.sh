@@ -11,10 +11,19 @@
 
 #-gt, -lt, -eq, -ge, -le
 
-if [ -f $1 ]
+#if [ -f $1 ]
+#then
+#    echo "file is exists"
+#else
+#    echo "file is not there, please create new one"
+#    touch $1; ls -1 $1
+#fi    
+
+if [ -d $1 ]
 then
-    echo "file is exists"
+    echo "Directory $1 is there"
+    ls -l $1
 else
-    echo "file is not there, please create new one"
-    touch $1; ls -1 $1
-fi    
+    echo "$1 is not present, creating it"
+    mkdir -p $1; ls -l $1
+fi        
