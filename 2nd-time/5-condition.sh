@@ -26,7 +26,7 @@
 #    echo "$@ argument has given"
 #fi
 
-Movies=( "DJ" "Athadu" "RRR" )
+Movies=$@
 
 for i in ${Movies[@]}
 do
