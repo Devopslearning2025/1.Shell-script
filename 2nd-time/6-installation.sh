@@ -10,6 +10,10 @@ else
     echo "you are with root user"
 fi
 
-dnf install tar -y
-
+dnf install gcc -y
+if [ $? -ne 0 ]
+then
+    echo "The installation ... FAILURE, check error"
+    exit 
+fi
 pwd
