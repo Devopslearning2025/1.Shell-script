@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo "Printing user id: $USER"
-echo "Printing Hostname: $HOSTNAME"
-echo "Printing present working dir: $PWD"
+echo "user id: $USER"
+echo "Hostname: $HOSTNAME"
+echo "present working dir: $PWD"
 echo "no of varibles: $#"
-echo "Printing all variables: $@"
+echo "all variables: $@"
 echo "Script name: $0"
 echo "Script PID: $$"
 
