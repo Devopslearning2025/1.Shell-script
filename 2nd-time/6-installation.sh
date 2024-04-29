@@ -10,7 +10,7 @@ else
     echo "you are with root user"
 fi
 
-dnf install gunzip -y
+dnf install gzip -y
 if [ $? -ne 0 ]
 then
     echo "The installation ... FAILURE, check error"
