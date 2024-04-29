@@ -32,10 +32,10 @@ for i in ${Movies[@]}
 do
     if [ -d $i ]
     then
-        echo "Directory $1 is there"
-        ls  $1
+        echo "Directory $i is there"
+        ls  $i
     else
         echo "$1 directory is not present, creating it"
-        mkdir -p $1; ls $1
+        mkdir -p $i; ls $i
     fi        
 done
