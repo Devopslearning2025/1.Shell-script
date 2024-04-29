@@ -20,8 +20,10 @@
 #fi    
 if [ $@ -ne 0 ]
 then
-    echo " please keep the argument"
+    echo " Please run with root user"
     exit 1
+else
+    echo "you are with root user"    
 fi
 
 if [ -d $1 ]
@@ -29,6 +31,6 @@ then
     echo "Directory $1 is there"
     ls -l $1
 else
-    echo "$1 is not present, creating it"
+    echo "$1 directory is not present, creating it"
     mkdir -p $1; ls -l $1
 fi        
