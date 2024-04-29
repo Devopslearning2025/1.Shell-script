@@ -10,10 +10,12 @@ else
     echo "you are with root user"
 fi
 
-dnf install gccc -y
+dnf install gunzip -y
 if [ $? -ne 0 ]
 then
     echo "The installation ... FAILURE, check error"
     exit 
+else
+    echo " installation .. SUCCESS"   
 fi
 pwd
