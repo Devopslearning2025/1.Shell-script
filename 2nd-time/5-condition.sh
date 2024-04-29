@@ -23,10 +23,10 @@ then
     echo " Please keep the argument"
     exit 1
 else
-    echo "$@ argument has give"    
-fi
+    echo "$@ argument has given"
 
-for i in $@
+for i in ${[@]}
+
 do
     if [ -d $i ]
     then
