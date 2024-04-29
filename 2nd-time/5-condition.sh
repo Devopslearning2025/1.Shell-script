@@ -18,15 +18,15 @@
 #    echo "file is not there, please create new one"
 #    touch $1; ls -1 $1
 #fi    
-#if [ $# -eq 0 ]
-#then
-##   echo " Please keep the argument"
- #   exit 1
-#else
-#    echo "$@ argument has given"
-#fi
-
 Movies=$@
+
+if [ $# -eq 0 ]
+then
+    echo " Please keep the argument"
+    exit 1
+else
+    echo "$@ argument has given"
+fi
 
 for i in ${Movies[@]}
 do
