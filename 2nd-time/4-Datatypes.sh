@@ -14,5 +14,6 @@ Movies=( "DJ" "Athadu" "RRR" )
 
 for i in $Movies
 do
-    echo $i
+    echo $i; 
+    ((i++))
 done
