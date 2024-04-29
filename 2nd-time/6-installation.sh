@@ -10,7 +10,7 @@ else
     echo "you are with root user"
 fi
 
-dnf install gcc -y
+dnf install gccc -y
 if [ $? -ne 0 ]
 then
     echo "The installation ... FAILURE, check error"
