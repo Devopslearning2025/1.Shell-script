@@ -18,6 +18,11 @@
 #    echo "file is not there, please create new one"
 #    touch $1; ls -1 $1
 #fi    
+if [ $@ -ne 0 ]
+then
+    echo " please keep the argument"
+    exit 1
+fi
 
 if [ -d $1 ]
 then
