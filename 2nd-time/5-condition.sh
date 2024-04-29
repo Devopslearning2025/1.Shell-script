@@ -34,7 +34,7 @@ do
     then
         echo "Directory $i is there, so creating backup"
         mv $i $i-$(date +%F)
-        ls  $i
+        ls  $i-$(date +%F)
 
     else
         echo "$1 directory is not present, creating it"
