@@ -15,5 +15,6 @@ if [ -f $1 ]
 then
     echo "file is exists"
 else
-    echo "file is there, please create new one"
+    echo "file is not there, please create new one"
+    touch $1
 fi    
