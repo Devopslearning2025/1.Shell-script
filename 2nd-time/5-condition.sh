@@ -23,7 +23,7 @@ then
     echo " Please keep the argument"
     exit 1
 else
-    echo "$@ has passed"    
+    echo "$@ argument has give"    
 fi
 
 if [ -d $1 ]
