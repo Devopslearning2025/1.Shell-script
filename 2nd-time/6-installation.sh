@@ -18,4 +18,12 @@ then
 else
     echo " installation .. SUCCESS"   
 fi
-pwd
+
+dnf install tar -y
+if [ $? -ne 0 ]
+then
+    echo "The installation ... FAILURE, check error"
+    exit 
+else
+    echo " installation .. SUCCESS"   
+fi
