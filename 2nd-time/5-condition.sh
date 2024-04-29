@@ -18,7 +18,7 @@
 #    echo "file is not there, please create new one"
 #    touch $1; ls -1 $1
 #fi    
-if [ $@ -eq 0 ]
+if [ $# -eq 0 ]
 then
     echo " Please run with root user"
     exit 1
