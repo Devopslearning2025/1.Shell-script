@@ -16,5 +16,5 @@ then
     echo "file is exists"
 else
     echo "file is not there, please create new one"
-    touch $1
+    touch $1; ls -1 $1
 fi    
