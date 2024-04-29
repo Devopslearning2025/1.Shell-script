@@ -26,11 +26,14 @@ else
     echo "$@ argument has give"    
 fi
 
-if [ -d $1 ]
-then
-    echo "Directory $1 is there"
-    ls -l $1
-else
-    echo "$1 directory is not present, creating it"
-    mkdir -p $1; ls -l $1
-fi        
+for i in $@
+do
+    if [ -d $i ]
+    then
+        echo "Directory $1 is there"
+        ls -l $1
+    else
+        echo "$1 directory is not present, creating it"
+        mkdir -p $1; ls -l $1
+    fi        
+done
