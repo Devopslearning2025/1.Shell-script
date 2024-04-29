@@ -16,5 +16,5 @@ for i in $Movies
 do
 #echo $i; 
  #   ((i++))
- print ( i=0; i<=3; i++ )
+ print ( i = 0; i <= 3; i++ )
 done
