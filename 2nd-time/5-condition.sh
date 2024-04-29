@@ -20,10 +20,10 @@
 #fi    
 if [ $# -eq 0 ]
 then
-    echo " Please run with root user"
+    echo " Please keep the argument"
     exit 1
 else
-    echo "you are with root user"    
+    echo "$# has passed"    
 fi
 
 if [ -d $1 ]
