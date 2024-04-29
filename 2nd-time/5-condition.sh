@@ -26,7 +26,7 @@ else
     echo "$@ argument has given"
 fi
 
-for i in ${$[@]}
+for i in $@
 do
     if [ -d $i ]
     then
